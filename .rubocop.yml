@@ -1,0 +1,49 @@
+AllCops:
+  TargetRubyVersion: 2.5
+
+Bundler/OrderedGems:
+  Enabled: false
+
+Layout/SpaceAroundOperators:
+  Exclude:
+    - Rakefile
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/StringLiterals:
+  Enabled: false
+
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: comma
+
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: consistent_comma
+
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: consistent_comma
+
+Style/PercentLiteralDelimiters:
+  Enabled: false
+
+Style/LambdaCall:
+  EnforcedStyle: braces
+
+Metrics/LineLength:
+  Max: 200
+
+Metrics/BlockLength:
+  Exclude:
+    - "spec/**/*"
+
+Naming/VariableNumber:
+  Enabled: false
+
+Layout/MultilineMethodCallIndentation:
+  Enabled: false
