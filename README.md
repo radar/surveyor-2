@@ -88,15 +88,17 @@ It is not necessary to link an answer to a survey. Instead, answers should be ad
 
 Add a new method that lets you find a survey's response by the user's email address. If the response is not found, then this method should return `nil`.
 
-### Finding negative / neutral / positive answers
+Add another method that returns `true` or `false` depending on if the user has responded to this survey yet.
 
-Surveys should be able to tell us how many positive, neutral or negative answers there are for a particular rating question. The different ratings are:
+### Finding low / neutral / high answers
 
-* Negative: 1 or 2
+Surveys should be able to tell us how many "low", "neutral" and "high" answers there are for a particular rating question. The different ratings are:
+
+* Low: 1 or 2
 * Neutral: 3
-* Positive: 4 or 5
+* High: 4 or 5
 
-Make it so that you can ask a survey to count the negative, neutral and positive answers for a given question on a survey. It should be possible to query a survey for negative, neutral and positive scores independently of each other. e.g. You should be able to ask for _only_ the count of negative scores for a question, without also calculating the neutral and positive scores for that same question.
+Add a method that counts the low answers on a survey for a given question. Once you've got that working, do the same for both the neutral and high answers too.
 
 ### Answer breakdown
 
